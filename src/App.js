@@ -2,9 +2,16 @@ import React from 'react';
 import Room from './components/Room/Room';
 import rooms from './data/rooms'
 
+import catelloPhoto from './data/castello.jpg'
+
+import './App.css'
+
 const App = () => {
   return (
-    <div><Room roomNumber={1} /><Room roomNumber={2} /><Room roomNumber={3} /></div>
+    <div className='App'>
+      <img src={catelloPhoto} className='Castello-photo'/>
+      {rooms.map(r => <Room roomNumber={r.number} roomCostByHour={r.costByHour} key={r.number}/>)}
+    </div>
   );
 };
 
