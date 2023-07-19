@@ -12,4 +12,13 @@
     margin-top: 20px;
     width: 150px;
     height: 150px;
+
+    border-radius: 15%;
+}
+
+.khn {
+    position: absolute;
+    height: 300px;
+    top: 600px;
+    right: 30px;
 }
