@@ -47,11 +47,11 @@ const Room = ({ roomNumber, roomCostByHour }) => {
   )
 
   useEffect(() => {
-    const finalText = `${startTime} - ${endTime}, ${colaText}, total: ${total}`
+    const finalText = `${startTime} - ${endTime}, ${colaText}, total: ${total + addCost}`
     if (startTime, endTime) {
       setFinalText(finalText)
     }
-  }, [startTime, endTime, colaText, total])
+  }, [startTime, endTime, colaText, addCost, total])
 
   return (
     <Space direction="horizontal" size="middle">
